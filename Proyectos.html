@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="proyectos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Ebal Juárez</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HojaDeVida.html">Hoja de vida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contactos">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-5">
+        <h1 class="display-5 fw-bold">Bienvenido a la página de proyectos</h1>
+        <p class="lead">Bienvenidos a nuestra página de proyectos de Ingeniería en Sistemas. En este espacio presentamos diferentes proyectos desarrollados a lo largo de nuestra formación académica, donde ponemos en práctica conocimientos de programación, bases de datos, desarrollo de software, redes, diseño de sistemas y otras áreas relacionadas con la tecnología.</p>
+        <a href="#Proyectos" class="btn btn-primary btn-lg">Ver proyectos</a>
+    </div>
+
+    <div class="container" id="Proyectos">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="PaginaBoleto.jpeg" class="card-img-top" alt="Pagina inicial de una tienda de boletos online">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Página web de boletos en Razor</h5>
+                        <div class="mb-2">
+                            <span class="badge bg-primary">C#</span>
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-primary">CSS</span>
+                        </div>
+                        <p class="card-text">Proyecto enfocado en el desarrollo de una plataforma web para la compra y gestión de boletos en línea. El sistema permite a los usuarios consultar eventos disponibles, seleccionar sus boletos y realizar sus compras de manera rápida y sencilla. Además, busca ofrecer una experiencia segura, organizada y accesible para facilitar la administración y venta de entradas.</p>
+                        <a href="https://github.com/EbalJuarez/Tienda_Boletos" class="btn btn-primary mt-auto">Ir al repositorio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="ProgramaMP3.jpeg" class="card-img-top" alt="Login de un programa MP3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">MP3 en Java</h5>
+                        <div class="mb-2">
+                            <span class="badge bg-primary">Java</span>
+                        </div>
+                        <p class="card-text">Proyecto desarrollado en Java inspirado en plataformas de música como Spotify. El programa permite a los usuarios explorar canciones, crear y gestionar listas de reproducción, reproducir contenido musical y organizar sus canciones favoritas. Este proyecto busca poner en práctica conceptos de programación orientada a objetos, manejo de interfaces y gestión de datos, creando una experiencia sencilla y funcional para la reproducción de música.</p>
+                        <a href="https://github.com/EbalJuarez/Proyecto-FInal" class="btn btn-primary mt-auto">Ir al repositorio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="ProgramaCarnet.jpeg" class="card-img-top" alt="Ingreso de datos para la validacion de carnets">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Programa para validar Carnets</h5>
+                        <div class="mb-2">
+                            <span class="badge bg-primary">C#</span>
+                        </div>
+                        <p class="card-text">Proyecto desarrollado en C# que consiste en la creación de un navegador web con una interfaz sencilla e intuitiva. El programa permite a los usuarios acceder a diferentes páginas de Internet, navegar entre sitios y utilizar funciones básicas de navegación. Este proyecto permite aplicar conocimientos de programación, diseño de interfaces y manejo de componentes web dentro de un entorno de escritorio.</p>
+                        <a href="https://github.com/EbalJuarez/Programa_Carn-" class="btn btn-primary mt-auto">Ir al repositorio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4" id="Contactos">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 col-xl-6">
+        <h2 class="h4 mb-3 text-center">Contacto</h2>
+        <form>
+            <div class="row mb-3">
+                <div class="col-12 col-md-6">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre" name="nombre" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="Correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="Correo" name="correo" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="motivo_contacto" class="form-label">Motivo de contacto</label>
+                <select id="motivo_contacto" name="motivo" class="form-select" required>
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option value="entrevista">Entrevista</option>
+                    <option value="consulta">Consulta sobre un proyecto</option>
+                    <option value="colaboracion">Propuesta de colaboración</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="Comentario" class="form-label">Comentario</label>
+                <textarea class="form-control" id="Comentario" name="comentario" rows="4" placeholder="Comenta aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-muted">
+        <small>&copy; 2026 Ebal Juárez</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
