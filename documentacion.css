@@ -1,0 +1,32 @@
+:root {
+    --bs-primary: #0f6e63;
+    --bs-primary-rgb: 15, 110, 99;
+
+    --bs-body-bg: #eef1f4;
+    --bs-body-color: #12213a;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-color: #ffffff;
+
+    --bs-btn-hover-bg: #0c584f;
+    --bs-btn-hover-border-color: #0c584f;
+    --bs-btn-hover-color: #ffffff;
+
+    --bs-btn-active-bg: #12213a;
+    --bs-btn-active-border-color: #12213a;
+
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.badge.bg-primary {
+    --bs-badge-color: #ffffff;
+}
+
+.card {
+    --bs-card-bg: #ffffff;
+    --bs-card-border-color: #d3dbe3;
+}
