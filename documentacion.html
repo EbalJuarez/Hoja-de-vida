@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Documentacion bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="documentacion.css" rel="stylesheet">
+    </head>
+  <body>
+    <header>
+
+    <h1 class="text-center">Diccionario</h1>
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="HojaDeVida.html">
+                Ebal Juárez
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#integracion">
+                            Integración
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#breakpoints">
+                            Breakpoints
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rejillas">
+                            Rejillas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#componentes">
+                            Componentes
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#extra">
+                            Extra
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+    
+    <div class="container py-4" id="integracion">
+        <h2 class="text-center">Integracion de bootstrap</h2>
+        <pre><code>
+        &lt;head&gt;<br>
+        &lt;meta charset="utf-8"&gt;<br>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+        &lt;title&gt;Documentacion bootstrap&lt;/title&gt;<br>
+        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"&gt;<br>
+        &lt;/head&gt;
+        </code></pre>
+        <p>Esto es importante de incluir dentro de nuestro head para que el navegador descargue todos los elementos de bootstrap</p>
+        
+        <h2 class="text-center">Integracion de script</h2>
+        <pre><code>
+        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"&gt;&lt;/script&gt;
+        </code></pre>
+        <p>Carga el javascript de bootstrap, permite implementar funciones interactivas en la pagina</p>
+    </div>
+    <div class="container py-4" id="breaskpoints">
+        <h2 class="text-center">Breaskpoints</h2>
+        <p>Los breaskpoints nos sirven para dimensionar nuestra pagina web dependiendo del tamañano de la pantalla en la que se vera</p>
+        
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Breakpoint</th>
+                    <th>Prefijo</th>
+                    <th>Para</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Extra small</td>
+                    <td>—</td>
+                    <td>&lt;576px / Móviles</td>
+                </tr>
+
+                <tr>
+                    <td>Small</td>
+                    <td>sm</td>
+                    <td>≥576px / Móviles grandes</td>
+                </tr>
+
+                <tr>
+                    <td>Medium</td>
+                    <td>md</td>
+                    <td>≥768px / Tablets</td>
+                </tr>
+
+                <tr>
+                    <td>Large</td>
+                    <td>lg</td>
+                    <td>≥992px / Laptops</td>
+                </tr>
+
+                <tr>
+                    <td>Extra large</td>
+                    <td>xl</td>
+                    <td>≥1200px / Monitores</td>
+                </tr>
+
+                <tr>
+                    <td>XXL</td>
+                    <td>xxl</td>
+                    <td>≥1400px / Pantallas grandes</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+    <div class="container py-4" id="rejillas">
+        <h2 class="text-center">Rejillas</h2>
+        <p>Los principales componentes para las rejillas son: </p>
+        <pre>
+            <code>
+            &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-6"&gt;Mitad izquierda&lt;/div&gt;
+                &lt;div class="col-md-6"&gt;Mitad derecha&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            </code>
+        </pre>
+        <p>Row, Col, Container se mezclan con Breakpoint para que la pagina sea responsiva. Es un poco dificil de entender como funcionan los prefijos dentro de las columnas</p>
+        <p>Un extra, se pueden usar margenes y paddings en las columnas:</p>
+        <pre>
+            <code>
+                &lt;div class="p-3"&gt;
+                Padding en todos los lados
+                &lt;/div&gt;
+
+                &lt;div class="px-3"&gt;
+                    Padding horizontal
+                &lt;/div&gt;
+
+                &lt;div class="py-3"&gt;
+                    Padding vertical
+                &lt;/div&gt;
+
+                &lt;div class="m-3"&gt;
+                    Margin en todos los lados
+                &lt;/div&gt;
+
+                &lt;div class="mx-3"&gt;
+                    Margin horizontal
+                &lt;/div&gt;
+
+                &lt;div class="my-3"&gt;
+                    Margin vertical
+                &lt;/div&gt;
+            </code>
+        </pre>
+    </div>
+    <div class="container py-4" id="componentes">
+        <h2 class="text-center">Componentes</h2>
+        <h3 class="text-center">Botones</h3>
+        <p>Los botones sirve para hacer mas interactiva nuestra pagina.</p>
+        <button type="button" class="btn btn-primary">
+        Guardar
+        </button>
+
+        <button type="button" class="btn btn-secondary">
+            Cancelar
+        </button>
+        <pre><code>
+            &lt;button type="button" class="btn btn-primary"&gt;
+                Guardar
+            &lt;/button&gt;
+
+            &lt;button type="button" class="btn btn-secondary"&gt;
+                Cancelar
+            &lt;/button&gt;
+        </code></pre>
+        <h3 class="text-center">Tarjetas</h3>
+        <p>Sirve para hacer como galerias dentro de la pagina, y estructurarla mejor</p>
+        <div class="card" style="width: 18rem;">
+        <img src="Java-Logo.png" class="card-img-top p-3" alt="...">
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+
+            <p class="card-text">
+                Some quick example text to build on the card title
+                and make up the bulk of the card’s content.
+            </p>
+
+            <a href="#" class="btn btn-primary">
+                Go somewhere
+            </a>
+        </div>
+        </div>
+        <pre><code>
+            &lt;div class="card" style="width: 18rem;"&gt;
+                &lt;img src="..." class="card-img-top" alt="..."&gt;
+
+                &lt;div class="card-body"&gt;
+                    &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+
+                    &lt;p class="card-text"&gt;
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card’s content.
+                    &lt;/p&gt;
+
+                    &lt;a href="#" class="btn btn-primary"&gt;
+                        Go somewhere
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code></pre>
+        <h3 class="text-center">Insignias</h3>
+        <p>Le podes asignar una "etiqueta" a un componente. Es como un aviso o para destacar caracteristicas</p>
+        <span class="badge bg-primary">Nuevo</span>
+
+        <span class="badge bg-secondary">Secundario</span>
+        <span class="badge bg-success">Activo</span>
+        <span class="badge bg-danger">Error</span>
+        <span class="badge bg-warning text-dark">Advertencia</span>
+        <span class="badge bg-info text-dark">Información</span>
+        <span class="badge bg-dark">Oscuro</span>
+        <pre><code>
+            &lt;span class="badge bg-primary"&gt;Nuevo&lt;/span&gt;
+
+            &lt;span class="badge bg-secondary"&gt;Secundario&lt;/span&gt;
+            &lt;span class="badge bg-success"&gt;Activo&lt;/span&gt;
+            &lt;span class="badge bg-danger"&gt;Error&lt;/span&gt;
+            &lt;span class="badge bg-warning text-dark"&gt;Advertencia&lt;/span&gt;
+            &lt;span class="badge bg-info text-dark"&gt;Información&lt;/span&gt;
+            &lt;span class="badge bg-dark"&gt;Oscuro&lt;/span&gt;
+        </code></pre>
+        <h3 class="text-center">Navbar</h3>
+        <p>Nos permite navegar en un conjunto de opciones y es dinamica. Lo importante para una navegacion es usar la etiqueta "a: junto con "href"</p>
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">Mi página</a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <pre><code>
+            &lt;nav class="navbar navbar-expand-lg bg-body-tertiary"&gt;
+                &lt;div class="container"&gt;
+
+                    &lt;a class="navbar-brand" href="#"&gt;Mi página&lt;/a&gt;
+
+                    &lt;button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"&gt;
+
+                        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+
+                    &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+                        &lt;ul class="navbar-nav"&gt;
+
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link active" href="#"&gt;Inicio&lt;/a&gt;
+                            &lt;/li&gt;
+
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link" href="#"&gt;Servicios&lt;/a&gt;
+                            &lt;/li&gt;
+
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link" href="#"&gt;Contacto&lt;/a&gt;
+                            &lt;/li&gt;
+
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/nav&gt;
+        </code></pre>
+        <h3 class="text-center">Formularios</h3>
+        <p>Son formularios para enviar datos desde la pagina. Siempre es importante tener claro el HTML semantico para los labels e inpunts</p>
+                <form>
+        <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre">
+        </div>
+
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo">
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+
+        <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="edad">
+        </div>
+
+        <div class="mb-3">
+            <label for="pais" class="form-label">País</label>
+            <select class="form-select" id="pais">
+                <option selected>Selecciona un país</option>
+                <option>Guatemala</option>
+                <option>México</option>
+                <option>España</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Género</label>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="genero" id="hombre">
+                <label class="form-check-label" for="hombre">
+                    Hombre
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="genero" id="mujer">
+                <label class="form-check-label" for="mujer">
+                    Mujer
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terminos">
+            <label class="form-check-label" for="terminos">
+                Acepto los términos y condiciones
+            </label>
+        </div>
+
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            Enviar
+        </button>
+
+        </form>
+        <pre><code>
+            
+            &lt;form&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="nombre" class="form-label"&gt;Nombre&lt;/label&gt;
+                &lt;input type="text" class="form-control" id="nombre"&gt;
+            &lt;/div&gt;
+
+            &lt;div class="mb-3"&gt;
+                &lt;label for="correo" class="form-label"&gt;Correo electrónico&lt;/label&gt;
+                &lt;input type="email" class="form-control" id="correo"&gt;
+            &lt;/div&gt;
+
+            &lt;div class="mb-3"&gt;
+                &lt;label for="password" class="form-label"&gt;Contraseña&lt;/label&gt;
+                &lt;input type="password" class="form-control" id="password"&gt;
+            &lt;/div&gt;
+
+            &lt;div class="mb-3"&gt;
+                &lt;label for="edad" class="form-label"&gt;Edad&lt;/label&gt;
+                &lt;input type="number" class="form-control" id="edad"&gt;
+            &lt;/div&gt;
+
+            &lt;div class="mb-3"&gt;
+                &lt;label for="pais" class="form-label"&gt;País&lt;/label&gt;
+                &lt;select class="form-select" id="pais"&gt;
+                    &lt;option selected&gt;Selecciona un país&lt;/option&gt;
+                    &lt;option&gt;Guatemala&lt;/option&gt;
+                    &lt;option&gt;México&lt;/option&gt;
+                    &lt;option&gt;España&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+
+            &lt;div class="mb-3"&gt;
+                &lt;label class="form-label"&gt;Género&lt;/label&gt;
+
+                &lt;div class="form-check"&gt;
+                    &lt;input class="form-check-input" type="radio" name="genero" id="hombre"&gt;
+                    &lt;label class="form-check-label" for="hombre"&gt;
+                        Hombre
+                    &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class="form-check"&gt;
+                    &lt;input class="form-check-input" type="radio" name="genero" id="mujer"&gt;
+                    &lt;label class="form-check-label" for="mujer"&gt;
+                        Mujer
+                    &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="mb-3 form-check"&gt;
+                &lt;input type="checkbox" class="form-check-input" id="terminos"&gt;
+                &lt;label class="form-check-label" for="terminos"&gt;
+                    Acepto los términos y condiciones
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class="mb-3"&gt;
+                &lt;label for="mensaje" class="form-label"&gt;Mensaje&lt;/label&gt;
+                &lt;textarea class="form-control" id="mensaje" rows="3"&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+
+            &lt;button type="submit" class="btn btn-primary"&gt;
+                Enviar
+            &lt;/button&gt;
+
+            &lt;/form&gt;
+
+
+        </code></pre>
+    </div>
+    <div class="container d-flex flex-column align-items-center" id="extra" >
+        <h3>Extra Carrusel de imagenes</h3>
+        <p>Muestra un conjunto de imagenes que se van rotando, es un extra que argegue en mi documentacion y la pagina de proyectos</p>
+        <p>Es un poco dificil de entender todos los atributos que usa para hacer interactiva el carrusel.</p>
+        <pre><code>
+            &lt;div id="carouselExample" class="carousel slide"&gt;
+            &lt;div class="carousel-inner"&gt;
+                &lt;div class="carousel-item active"&gt;
+                &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                &lt;/div&gt;
+                &lt;div class="carousel-item"&gt;
+                &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                &lt;/div&gt;
+                &lt;div class="carousel-item"&gt;
+                &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"&gt;
+                &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"&gt;
+                &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;/div&gt;
+        </code></pre>
+        <div id="carouselExample " class="carousel slide col-4">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="fotoprueba.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="fotoprueba.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="fotoprueba.avif" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+    </div>
+    <footer class="text-center py-4 text-muted">
+        <small>&copy; 2026 Ebal Juárez</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
